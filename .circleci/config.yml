@@ -1,0 +1,15 @@
+print("Toko Mainan Anak")
+print("=====================================")
+nama = input("Silahkan Masukkan Nama Pembeli :")
+kode= input("Silahkan Masukkan Kode :")
+harga = int(input("Silahan Masukkan Harga :"))
+jumbel = int(input("Silahkan Masukkan Jumlah Yang Dibeli :"))
+
+tohar = harga * jumbel
+print("=====================================")
+
+print ("Nama Pembeli adalah",nama)
+print ("kode Mainan adalah",kode)
+print ("Total Harganya adalah",harga)
+print ("Jumlah beli adalah",jumbel)
+print ("Toal Harganya adalah",tohar)
