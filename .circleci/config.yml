@@ -1,15 +1,26 @@
-print("Toko Mainan Anak")
-print("=====================================")
-nama = input("Silahkan Masukkan Nama Pembeli :")
-kode= input("Silahkan Masukkan Kode :")
-harga = int(input("Silahan Masukkan Harga :"))
-jumbel = int(input("Silahkan Masukkan Jumlah Yang Dibeli :"))
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
 
-tohar = harga * jumbel
-print("=====================================")
+# Define a job to be invoked later in a workflow.
+# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
+jobs:
+  say-hello:
+    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+    docker:
+      - image: cimg/base:stable
+    # Add steps to the job
+    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+    steps:
+      - checkout
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World!"
 
-print ("Nama Pembeli adalah",nama)
-print ("kode Mainan adalah",kode)
-print ("Total Harganya adalah",harga)
-print ("Jumlah beli adalah",jumbel)
-print ("Toal Harganya adalah",tohar)
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
