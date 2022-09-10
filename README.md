@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Mardanis
+- 👋 Hi, I’m @Catboi
 - 👀 I’m interested in Artificial  Intelligence
 - 🌱 I’m currently learning on Python,Java and html 
 - 📫 How to reach me? send me in mardanipro25@gmail.com
