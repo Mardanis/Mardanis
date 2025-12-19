@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Catboi
 - 👀 I’m interested in Artificial  Intelligence
-- 🌱 I’m currently learning on Python,Java and html 
+- 🌱 I’m currently learning on Python, GoLang, reactjs
 - 📫 How to reach me? send me in mardanipro25@gmail.com
 
 <!---
